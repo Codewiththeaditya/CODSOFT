@@ -1,5 +1,27 @@
-@media (max-width: 576px){
-    .offset-xs-3{
-        margin-left: 25%;
+
+
+
+/* index-page top suggestion styling */
+
+@media (min-width: 768px){
+    .rounded-md-3{
+        border-radius: 0.3rem !important; 
     }
+}
+
+/* SCROLL BAR PROPERTY NONE */
+
+.hide-scrollbar{
+     -ms-overflow-style: none;  /*for edge */
+     scrollbar-width: none;    /* for fireFox */
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+    display: none;  /*For chrome,safari*/
+}
+
+/* for index page img */
+.h-4-w-4{
+    height: 4rem;
+    width: 4rem;
 }

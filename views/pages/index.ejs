@@ -1,5 +1,43 @@
 <% layout("boilerplate/boilerplate") -%>
+<%let count = 0;%>
 
-<main class="flex-fill">
-    <h1>body will be here soon ...</h1>
+<main class="flex-fill bg-body-tertiary w-100">
+    <div class="container p-0 w-100">
+        <div class="bg-white rounded-0 rounded-md-3 my-3">
+            <div class="d-flex justify-content-start align-items-stretch overflow-auto hide-scrollbar">
+                <% for(let image of allImages){ %>
+                    <%if(count==0){%>
+                        <div class="p-3 ps-lg-5 pb-2 d-flex flex-column align-items-center justify-content-center">
+                            <div class="mb-1"><img src="<%=image.url%>" alt="<%=image.name%>"></div>
+                            <span><p class="text-nowrap"><%= image.name %></p></span>
+                        </div> 
+                        <%count++;%>
+                    <%}else{%>
+                        <div class="p-3 pb-2 d-flex flex-column align-items-center justify-content-center">
+                            <div class="mb-1"><img class="h-4-w-4" src="<%=image.url%>" alt="<%=image.name%>"></div>
+                            <span><p class="text-nowrap"><%= image.name %></p></span>
+                        </div>    
+                    <%}%>  
+                <%}%>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+
+        <div class="bg-success rounded-0 rounded-md-3 my-3">
+            Ads Slide show to add here...
+        </div>
+
+
+        <div class="bg-danger rounded-0 rounded-md-3 my-3">
+            <div class="d-flex flex-column">
+                <div class="p-2 ps-3 fw-semibold fs-4">Best of Electronics</div>
+
+                <div class="flex">
+                    <div>
+                        span buds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
