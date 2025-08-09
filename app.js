@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 8080;
+const port = process.env.PORT || 8080;
 const ejsMate = require("ejs-mate");
 const mongoose = require("mongoose");
 const Image = require("./models/Image.js");
-
+require("dotenv").config();
+const MONGO_URL = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/EcomDB"
 
 app.use(express.static(path.join(__dirname,"public")));
 
@@ -15,7 +16,8 @@ app.set("view engine","ejs")
 
 async function main(){
     try{
-        await mongoose.connect("mongodb://127.0.0.1:27017/EcomDB");
+        console.log(process.env.MONGO_URL);
+        await mongoose.connect(MONGO_URL);
         console.log("Connected to data base");
     }catch(err){
         console.log(err);
