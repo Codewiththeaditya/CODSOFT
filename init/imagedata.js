@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 const Image = require("../models/Image.js");
+require("dotenv").config({ path: __dirname + "/../.env" });
 
 async function main(){
     try{
-        await mongoose.connect("mongodb://127.0.0.1:27017/EcomDB");
+        await mongoose.connect(process.env.MONGO_URL);
         console.log("Connected to data base");
     }catch(err){
         console.log(err);
