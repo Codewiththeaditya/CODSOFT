@@ -1,0 +1,19 @@
+<div class="bg-white rounded-0 rounded-md-3 my-3">
+    <div class="d-flex flex-column">
+        <div class="p-2 ps-3 fw-semibold fs-4">Best of Electronics</div>
+        <div class="d-flex justify-content-stretch overflow-auto hide-scrollbar px-2 py-3">
+            <%for(image of allElectronics){%>
+                <div class="px-3 py-2">
+                    <a href="#" class="text-decoration-none text-dark fw-normal fs-6">
+                        <div class="px-3 py-4 d-flex flex-column align-items-center">
+                            <div class="">
+                                <img class="h-7-w-7" src="<%=image.url%>" alt="img">
+                            </div>
+                            <div class=""><%=image.name%></div>
+                        </div>
+                    </a>
+                </div>
+            <%}%>
+        </div>
+    </div>
+</div>

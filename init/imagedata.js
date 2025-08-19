@@ -22,36 +22,51 @@ let intiData = async () =>{
             [
                 {
                     name: "Mobile and Tablets",
-                    url: "/images/mobilesAndTablets.webp"
+                    url: "/header-img/mobilesAndTablets.webp"
                 },
                 {
                     name: "Fashion",
-                    url: "/images/fashion.webp"
+                    url: "/header-img/fashion.webp"
                 },
                 {
                     name: "Electronics",
-                    url: "images/electronics.webp"
+                    url: "/header-img/electronics.webp"
                 },
                 {
                     name: "Home & Furniture",
-                    url: "/images/homeAndFurniture.png"
+                    url: "/header-img/homeAndFurniture.png"
                 },
                 {
                     name: "Tv & Appliances",
-                    url: "/images/tvAndAppliances.webp"
+                    url: "/header-img/tvAndAppliances.webp"
                 },
                 {
                     name: "Beauty & Personal care",
-                    url: "/images/beautyAndPersonalCare.png"
+                    url: "/header-img/beautyAndPersonalCare.png"
                 },
                 {
                     name: "Grocery",
-                    url: "/images/grocery.webp"
+                    url: "/header-img/grocery.webp"
                 },
                 {
                     name: "Kids",
-                    url: "/images/kids.jpg"
-                }
+                    url: "/header-img/kids.jpg"
+                },{
+                    name: "Mobile and Tablets",
+                    url: "/header-img/mobilesAndTablets.webp"
+                },
+                {
+                    name: "Fashion",
+                    url: "/header-img/fashion.webp"
+                },
+                {
+                    name: "Electronics",
+                    url: "/header-img/electronics.webp"
+                },
+                {
+                    name: "Home & Furniture",
+                    url: "/header-img/homeAndFurniture.png"
+                },
             ]
         );
 

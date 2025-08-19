@@ -20,8 +20,14 @@
     display: none;  /*For chrome,safari*/
 }
 
+
 /* for index page img */
 .h-4-w-4{
     height: 4rem;
     width: 4rem;
+}
+
+.h-7-w-7{
+    height: 108px;
+    width: 108px;
 }
